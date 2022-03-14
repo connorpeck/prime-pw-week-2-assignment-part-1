@@ -79,6 +79,13 @@ else if (pets>allowedPets){
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
+let mostPets ='';
+if (pets > friendsPets){
+    console.log('I have the most pets!');
+}
+else if (pets > friendsPets){
+    console.log('My friend has the most pets!');
+}
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
 //      "Second is the best" if your lucky number is 2
