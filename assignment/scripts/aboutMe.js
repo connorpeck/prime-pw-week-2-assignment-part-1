@@ -49,7 +49,6 @@ else {
     console.log('How about we stay home?');
 }*/
 
-
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
 if (luckyNumber===2 && adventurous===true){
@@ -80,13 +79,20 @@ else if (pets>allowedPets){
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
-let mostPets ='';
-if (pets > friendsPets){
-    console.log('I have the most pets!');
+let mostPets = -1;
+if (pets === friendsPets){
+    mostPets = 'It\'s a tie';
 }
-else if (pets > friendsPets){
-    console.log('My friend has the most pets!');
+else if (pets<friendsPets){
+    mostPets = friendsPets;
 }
+else {
+    mostPets= pets;
+}
+console.log(mostPets);
+
+
+
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
 //      "Second is the best" if your lucky number is 2
