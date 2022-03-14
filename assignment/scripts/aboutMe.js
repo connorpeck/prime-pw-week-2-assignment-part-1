@@ -41,13 +41,14 @@ const allowedPets = 4;
 
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
-
+/*
 if (adventurous === true){
     console.log('Aventures are great!');
 }
 else {
     console.log('How about we stay home?');
-}
+}*/
+
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
@@ -93,6 +94,21 @@ else if (pets > friendsPets){
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 
+switch (luckyNumber){
+    case 1: 
+console.log('First is the worst')
+        break;
+    case 2:
+console.log('Second is the best')
+        break;
+    case 3:
+console.log('Third is the one with the polka dot dres')
+        break;
+    default:
+console.log('Luck is what happens when preparation meets opportunity')
+    break;
+}
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-
+console.log((adventurous) ? 'Adventures are great!' : 'How about we stay home');
